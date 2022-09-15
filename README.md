@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+Assignment Project for Dreadnought
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Instructions to check the project.
 
-## Available Scripts
+# When on Main Page.
+ 
+   Main Pages is created to provide an interface between the user and the dashboard.
+   The user can login to the dashboard by clicking on the login / signup button.
+   At current we are not taking data from the users for entering the data will not cause any effect you can directly click
+   stimulate the dashboard.
 
-In the project directory, you can run:
+# When on Dashboard page.
 
-### `npm start`
+1. Dashboard
+    It only cotaines the dummy Top image and some dummy testimonials by the user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Courses -> ALl Courses
+    On Cliking courses it autmaticaly redirects to the all courses component.
+    It will let you to Subscribe to new courses.
+    **Subscribe** button will add the course to the list.
+    Added courses will display on **Subscribed Courses** option.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Courses -> Subscribed Courses
+    The subscribed courses will come here.
+    You can remove those courses by clicking remove.
+    **Remove** option will remove the courses from subscribed courses.
+    **Subscribed** option will will show the details of the course in console.
 
-### `npm test`
+4. Other options (Earnings, Achievements, Milestones, Assignments, Refer & Earn, Help/Support)
+    All the remaining options are dummy options but you can click them.
+    Sample text is available in all of them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Note
+    1. Please wait till the loading animation is completed when you click the **Subscribe** button.
+       When it is completed it will show the **Subscribed** message.
+       Do not click mulitple courses at the same time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    2. When you are searching for the courses by typing very fast can sometimes cause lagging but don't worry it will
+       automatically resolved after a few times. 
+       It happens because when you type it calls the provided api everytime, hence calling the function multiple times will lead to a little delay in the response.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    3. Where ever there is a place for a logo a rectangle of blue background is added to show how logo will be placed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    4. Routing is not added only for main page to dashboard. All the components are rendered on the same page.
+       The components are rendered based on the state of the component.
+       If the state is true then the component will be rendered else it will not be rendered.
 
-### `npm run eject`
+    5. The project is not responsive. It is only for desktop view with greater width than 1024px.
+       Some text will be hidden if the width is because of **alt tag** of the image.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    6. There is no javascript error and warnings in this project, but when you load the courses because the images are not
+       available it will show the error in the console. But it will not affect the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    7. If the account is already selected then it is appear in green color and says subscribed till the you refresh the page
+       or remove the account from the **Subscribed Courses** option.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    8. The data appearing in the courses list is from a random api which return list of companies.
+       The data is not stored in the local storage or any other storage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    9. If there are something you want to ask or want to know more about the project please contact me.
+       I will be happy to answer your questions.

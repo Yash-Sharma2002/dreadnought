@@ -1,0 +1,183 @@
+p {
+  padding-bottom: unset ;
+  margin-bottom: unset ;
+}
+a {
+  text-decoration: none !important;
+}
+#above-navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  color: #fff;
+}
+.navbar {
+  width: 70%;
+  margin: 10px auto;
+}
+.sticky {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.sticky .navbar {
+  margin: 10px auto;
+}
+.container-fluid {
+  position: relative;
+}
+.logo {
+  font-size: 1.5rem;
+  transition: 0.2s ease;
+  color: inherit;
+}
+.logo:hover {
+  color: #fff;
+}
+.sticky .logo:hover {
+  color: rgb(255, 77, 0);
+}
+.sticky .logo {
+  font-size: 1.3rem;
+}
+.navbar .me-auto {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+.nav-link {
+  color: inherit !important;
+  font-size: 1.1rem;
+  transition: 0.4s ease;
+}
+.styler {
+  width: fit-content;
+  position: relative;
+  text-align: center;
+}
+.styler::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transform: scaleX(0);
+  left: 0;
+  transition: transform 0.5s ease;
+}
+.sticky .styler::after {
+  background-color: rgb(255, 77, 0) !important;
+}
+.styler:hover::after {
+  transform: scaleX(1);
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.top {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/main.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.top .card-decider {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  z-index: 11;
+}
+
+.top .card-decider .card {
+  width: 35%;
+  height: inherit;
+  margin: 0 auto auto auto;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  padding: 20px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.top .logo {
+  font-size: 3rem;
+  color: white;
+}
+.top h3 {
+  padding: 10px;
+  text-align: start;
+}
+.top .signup {
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(255, 77, 0);
+  color: #000;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-decoration: none !important;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease;
+  color: white;
+}
+.rest-details {
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+}
+.rest-details .about {
+  padding: 20px;
+  width: 60%;
+  margin: 3rem auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.data-item {
+  width: 100%;
+  padding: 20px;
+}
+.bg {
+  background-color: #eff4ff;
+}
+.bg-2 {
+  background: url("../assets/stars.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.head {
+  font-size: 3rem;
+  color: #2433ff;
+  font-weight: 700;
+  margin: 2rem auto;
+  text-align: center;
+}
+.main {
+  width: 80%;
+  margin: 4rem auto;
+  padding: 20px;
+  text-align: center;
+}
+.main img {
+  width: 250px;
+}
+.subtext {
+  font-size: 1.4rem;
+  margin: 25px auto;
+}
+.main-2 {
+  width: 50%;
+  margin: 4rem auto;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.main-2 img {
+  width: 400px;
+}
+.provider img {
+  width: 40px;
+}
+.provider .subtext {
+  font-size: 1rem;
+}
